@@ -5,8 +5,9 @@
 
 #LEARN YOU THE NODE.JS FOR MUCH WIN!
 ─────────────────────────────────────
- HELLO WORLD
- Exercise 1 of 13
+
+#HELLO WORLD
+#Exercise 1 of 13
 
 Write a program that prints the text "HELLO WORLD" to the console (stdout).
 
@@ -28,8 +29,9 @@ When you are done, you must run:
 to proceed. Your program will be tested, a report will be generated, and the lesson will be marked 'completed' if you are successful.
 
 -------------------------------------------------------------------------------
-BABY STEPS
- Exercise 2 of 13
+
+#BABY STEPS
+#Exercise 2 of 13
 
 Write a program that accepts one or more numbers as command-line arguments and prints the sum of those numbers to the console (stdout).
 
@@ -56,8 +58,8 @@ Also be aware that all elements of process.argv are strings and you may need to 
 learnyounode will be supplying arguments to your program when you run learnyounode verify program.js so you don't need to supply them yourself. To test your program without verifying it, you can invoke it with learnyounode run program.js. When you use run, you are invoking the test environment that learnyounode sets up for each exercise.
 -------------------------------------------------------------------------------
 
-MY FIRST I/O!
- Exercise 3 of 13
+#MY FIRST I/O!
+#Exercise 3 of 13
 
 Write a program that uses a single synchronous filesystem operation to read a file and print the number of newlines (\n) it contains to the console (stdout), similar to running cat file | wc -l.
 
@@ -84,8 +86,9 @@ Documentation on Buffers can be found by pointing your browser here:
 If you're looking for an easy way to count the number of newlines in a string, recall that a JavaScript String can be .split() into an array of substrings and that '\n' can be used as a delimiter. Note that the test file does not have a newline character ('\n') at the end of the last line, so using this method you'll end up with an array that has one more element than the number of newlines.
 
 -------------------------------------------------------------------------------
- MY FIRST ASYNC I/O!
- Exercise 4 of 13
+
+#MY FIRST ASYNC I/O!
+#Exercise 4 of 13
 
 Write a program that uses a single asynchronous filesystem operation to read a file and print the number of newlines it contains to the console (stdout), similar to running cat file | wc -l.
 
@@ -107,8 +110,8 @@ Documentation on the fs module can be found by pointing your browser here:
   file:///usr/local/lib/node_modules/learnyounode/node_apidoc/fs.html
 -------------------------------------------------------------------------------
 
-FILTERED LS
- Exercise 5 of 13
+#FILTERED LS
+#Exercise 5 of 13
 
 Create a program that prints a list of files in a given directory, filtered by the extension of the files. You will be provided a directory name as the first argument to your program (e.g. '/path/to/dir/') and a file extension to filter by as the second argument.
 
@@ -134,8 +137,9 @@ Documentation on the path module can be found by pointing your browser here:
   file:///usr/local/lib/node_modules/learnyounode/node_apidoc/path.html
 
 -------------------------------------------------------------------------------
- MAKE IT MODULAR
- Exercise 6 of 13
+
+#MAKE IT MODULAR
+#Exercise 6 of 13
 
 This problem is the same as the previous but introduces the concept of modules. You will need to create two files to solve this.
 
@@ -192,8 +196,9 @@ Also keep in mind that it is idiomatic to check for errors and do early-returns 
 
 
 -------------------------------------------------------------------------------
- HTTP CLIENT
- Exercise 7 of 13
+
+#HTTP CLIENT
+#Exercise 7 of 13
 
 Write a program that performs an HTTP GET request to a URL provided to you as the first command-line argument. Write the String contents of each "data" event from the response to a new line on the console (stdout).
 
@@ -221,8 +226,8 @@ The response object / Stream that you get from http.get() also has a setEncoding
 
 -------------------------------------------------------------------------------
 
-HTTP COLLECT
- Exercise 8 of 13
+#HTTP COLLECT
+#Exercise 8 of 13
 
 Write a program that performs an HTTP GET request to a URL provided to you as the first command-line argument. Collect all data from the server (not just the first "data" event) and then write two lines to the console (stdout).
 
@@ -270,8 +275,9 @@ Documentation for both of these modules has been installed along with learnyouno
 
 
 -------------------------------------------------------------------------------
- JUGGLING ASYNC
- Exercise 9 of 13
+
+#JUGGLING ASYNC
+#Exercise 9 of 13
 
 This problem is the same as the previous problem (HTTP COLLECT) in that you need to use http.get(). However, this time you will be provided with three URLs as the first three command-line arguments.
 
@@ -287,8 +293,9 @@ Counting callbacks is one of the fundamental ways of managing async in Node. Rat
 
 
 -------------------------------------------------------------------------------
-TIME SERVER
- Exercise 10 of 13
+
+#TIME SERVER
+#Exercise 10 of 13
 
 Write a TCP time server!
 
@@ -340,8 +347,9 @@ Or, if you want to be adventurous, use the strftime package from npm. The strfti
 
 
 -------------------------------------------------------------------------------
-HTTP FILE SERVER
- Exercise 11 of 13
+
+#HTTP FILE SERVER
+#Exercise 11 of 13
 
 Write an HTTP server that serves the same text file for each request it receives.
 
@@ -378,8 +386,9 @@ The fs core module also has some streaming APIs for files. You will need to use 
 
 
 -------------------------------------------------------------------------------
-HTTP UPPERCASERER
- Exercise 12 of 13
+
+#HTTP UPPERCASERER
+#Exercise 12 of 13
 
 Write an HTTP server that receives only POST requests and converts incoming POST body characters to upper-case and returns it to the client.
 
@@ -414,8 +423,9 @@ Documentation for through2-map has been installed along with learnyounode on you
 
 -------------------------------------------------------------------------------
 ─────────────────────────────────────
- HTTP JSON API SERVER
- Exercise 13 of 13
+
+#HTTP JSON API SERVER
+#Exercise 13 of 13
 
 Write an HTTP server that serves JSON data when it receives a GET request to the path '/api/parsetime'. Expect the request to contain a query string with a key 'iso' and an ISO-format time as the value.
 
