@@ -6,23 +6,23 @@ followed by a newline character. Month, day, hour and minute must be zero-filled
 "2013-07-06 17:42"
  */
 
-var net = require('net')
+var net = require('net');
 
 function zeroFill(i) {
-  return (i < 10 ? '0' : '') + i
+  return (i < 10 ? '0' : '') + i;
 }
 
 function now () {
-  var d = new Date()
+  var d = new Date();
   return d.getFullYear() + '-'
     + zeroFill(d.getMonth() + 1) + '-'
     + zeroFill(d.getDate()) + ' '
     + zeroFill(d.getHours()) + ':'
-    + zeroFill(d.getMinutes())
+    + zeroFill(d.getMinutes());
 }
 
 var server = net.createServer(function (socket) {
-  socket.end(now() + '\n')
-})
+  socket.end(now() + '\n');
+});
 
-server.listen(Number(process.argv[2]))
+server.listen(Number(process.argv[2]));

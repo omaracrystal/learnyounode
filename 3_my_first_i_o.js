@@ -9,14 +9,14 @@ command-line argument.
 /*
 By default, Node.js installations come with the file system module, fs. For the most part, fs simply provides a wrapper for the standard file operations.
  */
-var fs = require('fs')
+var fs = require('fs');
 
-var filename = process.argv[2]
-var contents = fs.readFileSync(filename)
+var filename = process.argv[2];
+var contents = fs.readFileSync(filename);
 var str = contents.toString();
-var lines = str.split('\n').length
+var lines = str.split('\n').length;
 
-console.log(lines - 1)
+console.log(lines - 1);
 
 // note you can avoid the .toString() by passing 'utf8' as the second argument to readFileSync, then you'll get a String!
 
