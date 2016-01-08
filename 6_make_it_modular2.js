@@ -18,4 +18,4 @@ module.exports = function(pathFile, ext, callback){
         });
         return callback(null, filtered);
     });
-}
+};
